@@ -5,7 +5,7 @@ let socket = null
 
 const useChatStore = create((set) => {
      if (!socket) {
-          socket = io('http://localhost:3000')
+          socket = io('https://chat-app-api-l4z2.onrender.com')
      }
 
    return {
