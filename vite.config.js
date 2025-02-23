@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss(),
 
   ],
-  base: "chat-app-react"
+  base: "/"
 })
