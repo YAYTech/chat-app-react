@@ -23,7 +23,7 @@ const useChatStore = create((set) => {
           socket.emit('message', {message, room, name})
      },
 
-     getMessage: () => {
+     getMessage: (scroll) => {
           socket.off('message')
           socket.on('message', ({message, name}) => {
                set((state) => ({ messages: [...state.messages, { text: message, sender: name }] }))
